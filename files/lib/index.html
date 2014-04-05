@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Lib.js - A JavaScript Animation Library</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="data/data-pre.js"></script>
+<script src="data/jquery-1.10.2.min.js"></script>
+<script>
+window.onload = function() {
+	var keyPressed = false;
+	Lib().setCanvas(MY_CANVAS_ELEMENT);
+	Lib("loader2").sprite({
+		src:"graphics/guy2.png",
+		size:[50,100],
+		position:[0,200],
+		speed:70,
+		frequency:8,
+		x:'center',
+		y:'center'
+	});
+	Lib().load(function() {
+		Lib().addInputRule(function() {
+			var obj = Lib("loader2");
+			if(keyPressed) Lib().stopAnimation();
+			if(Lib().hasInputKey(39)) {
+				if(obj.getX() >= Lib().canvas.width) obj.setX(-obj.getWidth());
+				obj.setSpriteX(0);
+				obj.setSpriteY(100);
+				obj.reverseAnimation(false);
+				obj.increaseX();
+			}
+			if(Lib().hasInputKey(37)) {
+				if(obj.getX() + obj.getWidth() <= 0) obj.setX(Lib().canvas.width);
+				obj.setSpriteY(0);
+				obj.setSpriteX(0);
+				obj.reverseAnimation(true);
+				obj.decreaseX();
+			}
+			if(Lib().hasInputKey(40)) {
+				if(obj.getY() >= Lib().canvas.height) obj.setY(-obj.getHeight());
+				obj.setSpriteX(0);
+				obj.setSpriteY(200);
+				obj.reverseAnimation(false);
+				obj.increaseY();
+			}
+			if(Lib().hasInputKey(38)) {
+				if(obj.getY() + obj.getHeight() <= 0) obj.setY(Lib().canvas.height);
+				obj.decreaseY();
+				obj.setSpriteX(0);
+				obj.setSpriteY(300);
+				obj.reverseAnimation(false);
+			}
+			if(Lib().hasInput() && (Lib().hasInputKey(39) || Lib().hasInputKey(37) || Lib().hasInputKey(40) || Lib().hasInputKey(38) || Lib().hasInputKey(32))) {
+				obj.resumeAnimation();
+				if(!keyPressed) keyPressed = true,obj.sprite.frequency = 13;
+			} else if(keyPressed) obj.stopAnimation();
+		});
+	});
+};
+</script>
+</head>
+<body>
+<div id="top">
+	<div id="brand">Lib.js</div><!--#brand-->
+	<div id="menu">
+		<ul>
+			<li data-label="documentation"></li>
+			<li data-label="download"></li>
+			<li data-label="demos"></li>
+		</ul>
+	</div><!--#menu-->
+	<div id="contact">
+		<ul>
+			<li data-label="contact"></li>
+		</ul>
+	</div><!--#contact-->
+</div><!--#top-->
+<div id="wrapper">
+	<div id="note-wrapper"></div><!--note-wrapper-->
+	<div class="box-wrapper" id="home">
+		<div id="about" class="box">
+			<span class="libjs">Lib.js</span> is an HTML5 animation library. It provides an easy-to-use API to create simple animations with a single line of code, or entire games with ease.
+			See it in action by <a href="demos.html">checking out demos here</a>, or <a href="documentation.html">read its documentation here</a>.
+		</div><!--#about-->
+		<div class="box-title box">Simple Syntax</div><!--.box-title-->
+		<div class="box">
+			The library's extemely simple syntax allows you to animate any sprite image with a single line of code using HTML5 Canvas.
+		</div><!--.box-->
+		<div class="box-title box">Complete Control</div><!--.box-title-->
+		<div class="box">
+			Lib.js allows users to control every aspect of an object's animation, from frame speed to frame frequency to even the order of the frames themselves.
+		</div><!--.box-->
+		<div class="box-title box">Support</div><!--.box-title-->
+		<div class="box">
+			Lib.js is supported in all browsers compatible with HTML5. You can <a href="documentation.html">find the documentation here</a>.
+		</div><!--.box-->
+	</div><!--box-wrapper-->
+	<div class="box-wrapper" id="download">
+		<div class="separator"></div><!--.sep-->
+		<div class="box-title box">Download</div><!--.box-title-->
+		<div class="box" style="text-align:center;">
+			<p><span class="libjs">Lib.js</span> is comming soon...</p>
+			<!--Lib.js is available for purchase at CodeCanyon. <a href="http://codecanyon.net/">Click for further details</a>.-->
+		</div><!--.box-->
+	</div><!--.box-wrapper-->
+</div><!--#wrapper-->
+</body>
+</html>

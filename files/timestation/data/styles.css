@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/css?family=Marcellus);
+@import url(http://fonts.googleapis.com/css?family=Molle:400italic);
+
+a {
+text-decoration:none; color:inherit;
+}
+body,html {
+width:100%; font:normal 16px 'Marcellus'; color:#f0f0f0;
+}
+body {
+background:rgb(28,30,29); font:normal 16px 'Marcellus',sans-serif;
+}
+
+#top {
+width:100%; height:50px; background:rgb(228,230,230); border-bottom:2px solid rgb(166,151,151); position:relative;
+}
+	#brand {
+	width:250px; padding:6.4px; text-align:center; margin:0 auto 0 auto; font-style:italic; font-family:'Molle'; font-size:2em; color:rgb(28,30,29); text-shadow:0 1px 0 white;
+	}
+#wrapper {
+width:100%; margin:2% auto 50px auto; position:relative;
+}
+	#picture-wrapper {
+	width:100%; display:block; margin:0 auto 0 auto; position:relative;
+	}
+
+.Pictre-overlay {
+position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(22,24,24,0.9); display:none;
+}
+	.Pictre-overlay-pic {
+	margin:0 auto 0 auto;
+	}
+		.Pictre-overlay-pic img {
+		width:100%;
+		}
+.Pictre-empty {
+margin:0 auto 0; position:absolute; left:41%; top:30%; width:250px; height:100px; text-align:center; text-shadow:0 -1px 0 rgb(0,0,0);
+}
+.Pictre-upload {
+margin:0 auto 0; position:absolute; left:41%; top:30%; width:700px; height:450px; text-align:center; text-shadow:0 -1px 0 rgb(0,0,0);
+background:rgb(28,30,29); border-width:3px 1px 1px 1px; border-style:solid; border-color:rgb(162,168,168) rgb(34,38,38) rgb(34,38,38) rgb(34,38,38); border-radius:2px; display:table;
+}
+	.Pictre-upload:before {
+	left:0; top:-19px; position:absolute; border-style:solid; border-width:8px; border-color:transparent rgb(85,91,91) rgb(85,91,91) transparent; content:' '; width:0; height:0;
+	}
+	.Pictre-upload:after {
+	right:0; top:-19px; position:absolute; border-style:solid; border-width:8px; border-color:transparent transparent rgb(85,91,91) rgb(85,91,91); content:' '; width:0; height:0;
+	}	
+	.Pictre-upload-header {
+	width:100%; min-height:10px; background:rgb(228,230,230); padding:10px 0 8px 0; border-style:solid; border-width:0 0 1px 0; border-color:rgb(160,168,168);
+	font-family:'Molle'; font-style:italic; font-size:1.7em; color:rgb(28,30,29); text-shadow:0 1px 0 white;
+	box-shadow:0 2px 1px rgb(24,28,28);
+	}
+	.Pictre-upload-area {
+	width:250px; height:230px; border-radius:6px; border:3px dashed rgb(146,156,156); position:absolute; top:50%; left:50%; cursor:default;
+	text-align:center; background:rgb(40,43,42); overflow-x:hidden;
+	}
+		.Pictre-upload-area:active {
+		background:rgb(52,56,55);
+		}
+		.Pictre-upload-area-shader {
+		position:absolute;  border:0; padding:0; left:0px; top:0; width:100%; height:100%; display:table; z-index:1;
+		box-shadow:inset 2px 2px 10px rgb(3,4,4); -moz-box-shadow:inset 2px 2px 10px rgb(3,4,4); -o-box-shadow:inset 2px 2px 10px rgb(3,4,4); -webkit-box-shadow:inset 2px 2px 10px rgb(3,4,4);
+		-ms-box-shadow:inset 2px 2px 10px rgb(3,4,4);
+		}
+			.Pictre-upload-area p {
+			width:100%; padding:0 10px 0 10px; display:table-cell; vertical-align:middle; color:rgb(84,90,90); text-shadow:0 -1px 0 rgb(15,17,16); word-wrap:break-word; z-index:999;
+			}
+		.Pictre-upload-area-progress {
+		position:absolute; left:0; top:0; width:0; height:100%; background:rgb(66,29,77); z-index:0;
+		}
+.Pictre-pic {
+width:191px; min-height:5px; padding:12px 12px 7px 12px; background:rgb(47,51,51); margin:11px; position:absolute; border-radius:1px;
+border-width:2px 1px 1px 2px; border-style:solid; border-color:rgb(23,24,24) rgb(23,24,24) rgb(60,64,64) rgb(23,24,24); text-align:center; float:left;
+box-shadow:inset 0 -1px 0 rgb(23,24,24); -moz-box-shadow:inset 0 -1px 0 rgb(23,24,24); -o-box-shadow:inset 0 -1px 0 rgb(23,24,24); -webkit-box-shadow:inset 0 -1px 0 rgb(23,24,24);
+-ms-box-shadow:inset 0 -1px 0 rgb(23,24,24);
+}
+	.Pictre-pic:active {
+	background:rgb(59,64,64);
+	}
+	.Pictre-pic img {
+	max-width:191px; margin:0;
+	}
+.vert-shader-1,.vert-shader-2 {
+width:1px; height:100%; position:absolute; background:rgb(47,52,50); top:0;
+}
+.vert-shader-2 {
+background:rgba(255,255,255,0.25);
+}
+.hor-shader-1,.hor-shader-2,.hor-shader-3 {
+width:100%; height:1px; position:absolute; background:rgb(47,52,50); left:0;
+}
+.hor-shader-2 {
+background:rgba(255,255,255,0.25);
+}
+.hor-shader-3 {
+background:rgb(166,151,151);
+}
+.left {
+left:0;
+}
+.right {
+right:0;
+}
+.top {
+top:0;
+}
+.bottom {
+bottom:0;
+}

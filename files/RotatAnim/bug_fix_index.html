@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Rotation Animation - Personalized Client Copy</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="0.4.x/f57447964aeecfe76cb3b1861897c05a.jQuery.RotatAnim.js"></script>
+<script src="js/data.js"></script>
+<script>
+window.onload = function() {
+	$.fn.rotate.serialize();
+
+	var isRotating = false;
+	$('#centerpiece').on('mouseenter',function() {
+		if(!isRotating) {
+			isRotating = true;
+			$('#gear1').rotate(360,{speed:250},function() {
+				$(this).rotate(0);
+				if(isRotating) isRotating = false;
+			});
+			$('#gear2').rotate(360,{speed:350},function() {
+				$(this).rotate(0);
+				if(isRotating) isRotating = false;
+			});
+		}
+	});
+	$('#centerpiece').on('mouseleave',function() {
+		if(isRotating) {
+			$('#gear1').rotate(0,{speed:400});
+			$('#gear2').rotate(0,{speed:400},function() {
+				if(isRotating) isRotating = false;
+			});
+		}
+	});
+};
+</script>
+</head>
+<body>
+<div id="top"></div><!--#top-->
+<div id="wrapper">
+	<div id="header"></div><!--#header-->
+	<div id="centerpiece">
+		<div id="gear2" class="gear"></div><!--.gear-->
+		<div id="gear1" class="gear"></div><!--.gear-->
+		<div id="brand">Rotation Animation</div><!--#brand-->
+	</div><!--#centerpiece-->
+	<div class="note">
+		<div class="note-content">
+		<p class="title">Rotation Animation <span class="num RotatAnimVar">v {RotatAnim.getVersionNumber}</span></p>
+		<p>This version of Rotation Animation is a personalized customer patch. Hover over the gears above to see a demo of your bug fixed. <span class="RotatAnimVar">(ID:{RotatAnim.getVersionID})</span>.</p>
+		</div><!--.note-content-->
+	</div><!--.note-->
+	<div class="note">
+		<div class="note-syntax" id="demo-syntax">
+			<pre>
+			var isRotating = false;
+			$('.gear').on('mouseenter',function() {
+			  if(!isRotating) {
+			    isRotating = true;
+			    $('#gr_one').rotate(360,{speed:250},function() {
+			      $(this).rotate(0);
+			      if(isRotating) isRotating = false;
+			    });
+			    $('#gr_two').rotate(360,{speed:350},function() {
+			      $(this).rotate(0);
+			      if(isRotating) isRotating = false;
+			    });
+			  }
+			});
+			$('.gear').on('mouseleave',function() {
+			  if(isRotating) {
+			    $('#gear_one').rotate(0,{speed:400});
+			    $('#gear_two').rotate(0,{speed:400},function() {
+			      if(isRotating) isRotating = false;
+			    });
+			  }
+			});
+			</pre>
+		</div><!--.note-syntax-->	
+	</div><!--.note-syntax-->
+	<div id="footer">&copy; 2013, Version ID <span class="RotatAnimVar">({RotatAnim.getVersionID})</span></div><!--#footer-->
+</div><!--#wrapper-->
+<div id="fx-overlay" class="fx"></div><!--#fx-overlay-->
+<div id="fx-noise" class="fx"></div><!--#fx-noise-->
+</body>
+</html>

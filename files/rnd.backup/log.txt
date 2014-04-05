@@ -1,0 +1,34 @@
+June 14, 2012
+<p class="tagline" style="margin-top:10px; font-size:15px; margin-bottom:5px;">Version 0.1</p>
+	<ul class="changelog">
+			<li>Version 0.1 Introduced</li>
+			<li>Plugin demo created</li>
+	</ul>
+
+June 15, 2012
+<p class="tagline" style="margin-top:10px; font-size:15px; margin-bottom:5px;">Version 0.2</p>
+				<ul class="changelog">
+					<li>Core re-written for better implementation</li>
+					<li>Ability to determine fastest rotational method added</li>
+					<li>Ability to determine current position added</li>
+					<li>Support for negative integers added</li>
+					<li>Small rotational bugs fixed</li>
+					<li>Text bugs fixed</li>
+				</ul>
+June 16, 2012
+<p class="tagline" style="margin-top:10px; font-size:15px; margin-bottom:5px;">Version 0.3</p>
+				<ul class="changelog">
+					<li>Support for multiple DOM objects added</li>
+					<li>Support for simultaneous animations added</li>
+					<li>Ability to customize speed</li>
+					<li>Settings engine re-written</li>
+					<li>Small bugs fixed</li>
+				</ul>
+June 18, 2012
+<p class="tagline" style="margin-top:10px; font-size:15px; margin-bottom:5px;">Version 0.4</p>
+				<ul class="changelog">
+					<li>Plugin core re-written for ease of use</li>
+					<li>Support for callback functions added</li>
+					<li>Syntax changed to expand functionality</li>
+					<li>Settings engine re-written</li>
+				</ul>

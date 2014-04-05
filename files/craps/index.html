@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Lab 7</title>
+<script src="css/settings.js"></script>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script>
+function showInstructions(object) {
+	if(object == 'hide') {
+		document.getElementById("instructions").style.display = "none";
+		document.getElementById("showInstructions").style.display = "block";
+	} else {
+		object.style.display = "none";
+		document.getElementById("instructions").style.display = "block";
+	}
+}
+</script>
+</head>
+<body>
+<div id="effect_light"></div><!--#effect_light-->
+<div id="wrapper">
+	<div id="header"><a href="../">Craps</a></div><!--#header-->
+	<div class="content">
+		<ul class="menu">
+			<li class="info">
+				<span style="font-size:1.5em;display:block;">Stats</span>
+				<span style="font-size:1.2em;float:left;">Wins: <span id="wins">0</span></span>
+				<span style="font-size:1.2em;float:left;clear:left;">Best: <span id="best">n/a</span></span>
+				<span style="font-size:1.2em;float:left;clear:left;">Score: <span id="score">0</span></span>
+				<span style="font-size:1.2em;float:left;clear:left;">Point: <span id="playerPoint">?</span></span>
+				<span style="font-size:1.2em;float:left;clear:left;">Round: <span id="round">1</span></span>
+			</li>
+			<li class="story" id="diceContainer">
+				<span class="spanTitle" id="status">Roll Dice</span>
+				<div class="dice">
+					<ul class="dot">
+						<li></li>
+					</ul>
+				</div><!--.dice-->
+				<div class="dice">
+					<ul class="dot">
+						<li></li>
+					</ul>
+				</div><!--.dice-->
+				<div class="clear"></div><!--.clear-->
+				<span class="spanTitle" style="margin-top:24px;font-size:0.8em;">Throws: <span id="rolls">0</span></span>
+			</li>
+			<li class="info">
+				<span style="font-size:1.5em;display:block;">Log</span>
+				<span style="font-size:1em;float:left;clear:left;width:100%;" id="data2"></span>
+			</li>
+		</ul>
+	</div><!--#content-->
+	<div class="content story" id="story">
+		<div id="alert">
+			<p style="font-size:1.1em;margin-bottom:10px;">How to play</p>
+			<p>Click on the dice to roll.</p>
+			<p>Craps is a dice game based on odds and randomness.</p>
+			<p>If on your first turn your dice add up to 7 or 11, you win.</p>
+			<span class="link" style="display:block;text-shadow:0 0 0;margin-top:10px;" id="showInstructions" onclick="showInstructions(this);">View all instructions</span>
+			<span style="display:none;" id="instructions">
+				<p>If your dice add up to 2, 3, or 12 on your first turn, you lose.</p>
+				<p>If your dice add up to 4, 5, 6, 8, 9, or 10 on the first throw, that number becomes your <span style="font-weight:bold;">point.</span></p>
+				<p>To win a round, you must roll the dice until you roll your point.</p>
+				<p>You lose if you roll a 7 before making your point.</p>
+				<p>Your score increases for winning a round or rolling doubles.</p>
+				<p>On losing, your score and round are reset. Your best score is kept.</p>
+				<p>Your score is based on the double's number and the amount of throws made.</p>
+				<span class="link" style="display:block;text-shadow:0 0 0;margin-top:10px;" id="hideInstructions" onclick="showInstructions('hide');">Hide all instructions</span>
+			</span>
+		</div><!--#alert-->
+	</div>
+	<div class="break"></div><!--.break-->
+	<div class="clear"></div><!--.clear-->
+	<div id="footer">by Juan Vallejo</div><!--#footer-->
+</div><!--#wrapper-->
+</body>
+</html>

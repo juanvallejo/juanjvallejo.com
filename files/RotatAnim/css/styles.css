@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Belleza);
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+html,body {
+width:100%; height:100%;
+}
+body {
+background-attachment:fixed !important;
+background: rgb(169,3,41); font:400 16px 'Belleza',arial,sans-serif; color:rgb(225,0,58);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1)));
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: -o-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+background: radial-gradient(ellipse at center,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+}
+a {
+text-decoration:none; color:inherit;
+}
+
+.fx {
+width:100%; height:100%; position:fixed; top:0; left:0; z-index:0;
+}
+#fx-noise {
+opacity:0.7; background:transparent url(i/noise.png) repeat 0 0 fixed;
+}
+#fx-overlay {
+opacity:0.6;
+background-attachment:fixed;
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65)));
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+}
+
+#top {
+
+}
+#wrapper {
+width:550px; margin:20px auto 0 auto; min-height:100px; background:; position:relative; z-index:1;
+}
+	#header {
+	width:100%; height:55px;
+	}
+	#centerpiece {
+	width:100%; min-height:226px; background:; position:relative; z-index:1; margin:0 0 0 0; background:;
+	}
+		.gear {
+		position:absolute; background:transparent url(i/gear.png) no-repeat center center; opacity:0.7; background-size:80%; background:;
+		}
+			.gear#gear1 {
+			width:190px; height:190px;  left:56%; margin-left:-95px; background-color:;
+			}
+			.gear#gear2 {
+			width:94px; height:94px; left:42.04%; margin-left:-70px;
+			}
+		#brand {
+		width:100%; font:400 1.8em 'Belleza'; color:rgb(74,0,18); clear:both; position:absolute; bottom:0; text-align:center; cursor:default; text-shadow:0 1px 0 rgba(148,0,38,0.9);
+		}
+	.hidden {
+	display:none;
+	}
+	.note-group {
+	display:none;
+	}
+		.note-group.first-child {
+		display:block;
+		}
+	.note {
+	width:400px; min-height:18px; background:rgb(69,1,17) url(i/noise.png); margin:10px auto; opacity:0.76; border-radius:5px; border-style:solid; border-width:1px; border-color:rgb(19,0,5) rgb(19,0,5) rgb(19,0,5) rgb(19,0,5);
+	box-shadow:0 1px 1px rgba(199,0,51,0.9); color:rgba(254,215,224,0.7); display:block;
+	}
+		.note#nav {
+		position:relative; padding:0; color:rgb(69,1,17);
+		}
+			.note#nav .note-content {
+			position:relative; left:50%; background:; padding:0; border:0; box-shadow:0;
+			}
+			.note#nav ul {
+			display:block; left:-50%; position:relative; background:; min-height:10px; padding:0;
+			}
+				.note#nav ul li {
+				display:inline; background:; float:left; margin:0 9px; cursor:pointer;
+				}
+					.note#nav ul li:active {
+					color:rgba(254,215,224,0.7);
+					}
+					.note#nav ul li:first-child {
+					margin-left:37px;
+					}
+		.note.note-clear {
+		background:transparent; border:0; box-shadow:0 0 0;
+		}
+			.note.note-clear .note-content {
+			padding:0;
+			}
+		.note .note-content {
+		width:95%; border-radius:inherit; min-height:inherit; border-style:solid; border-width:1px 0 0 0; border-color:rgba(148,0,38,0.8) white rgba(19,0,5,0.9) white; padding:10px; display:block;
+		font-size:0.97em;
+		}
+			.note .note-content.note-clickable:active {
+			border-top-color:rgba(19,0,5,0.8); background:rgba(0,0,0,0.1); opacity:0.7;
+			}
+			.note .note-content.note-label {
+
+			}
+				.note .note-content.note-label p {
+				text-align:center; cursor:default;
+				}
+			.note .note-content span, .note .note-fold span {
+			font:400 0.8em 'Nixie One',arial,sans-serif;
+			}
+			.note .note-content p {
+			text-shadow:0 -1px 0 black; width:100%; text-align:justify;
+			}
+			.note .note-content p.title {
+			text-align:center; display:block; padding-bottom:10px; margin-bottom:10px; font-size:1.1em; border-bottom:1px solid rgba(19,0,5,0.55);
+			}
+				.note .note-content p.title a:hover {
+				text-decoration:underline;
+				}
+		.note .note-syntax {
+		width:95%; border-radius:inherit; min-height:inherit; padding:10px; border-style:solid; border-width:1px 0 0 0; border-color:rgba(19,0,5,0.8) white rgba(19,0,5,0.9) white;
+		overflow-x:hidden;
+		}
+			.note .note-syntax pre {
+			font:400 0.781em 'Source Code Pro',sans-serif;
+			}
+			.note .note-syntax p,.note .note-syntax ul {
+			text-shadow:0 -1px 0 black; width:100%; text-align:justify; font-size:0.9em; color:rgba(255,150,150,0.6);
+			}
+				.note .note-syntax p.label {
+				text-align:center; display:block; font-size:0.85em;
+				}
+				.note .note-syntax p.title {
+				text-align:center; display:block; padding-bottom:10px; margin-bottom:10px; font-size:0.95em; border-bottom:1px solid rgba(19,0,5,0.4);
+				}
+			.note .note-syntax ul {
+			
+			}
+				.note .note-syntax ul li {
+				padding:3px 0 3px 0; border-top:1px solid rgba(19,0,5,0.28);
+				}
+					.note .note-syntax ul li:first-child,.note .note-syntax ul li.no-border {
+					padding-top:0; border-top-width:0;
+					}
+				.note .note-syntax ul.medium-spacing li {
+				padding:8px 0 12px 0; display:block;
+				}
+			.note .note-syntax.note-fold {
+			border-top-width:2px; border-top-color:rgba(19,0,5,0.6); background:rgba(0,0,0,0.1);
+			}
+			.note .note-syntax.note-input {
+			color:rgb(255,149,150);
+			}
+				.note .note-syntax.note-input input,.note .note-syntax.note-input textarea {
+				width:100%; display:block; border-radius:; padding:5px 0 15px 0; background:transparent; text-align:center; border-width:0 0 1px 0; border-style:solid; border-color:rgba(19,0,5,0.8); color:inherit; font:inherit; float:left;
+				}
+				.note .note-syntax.note-input textarea {
+				border:0; padding:10px 0 0 0; min-height:10px;
+				}
+	.section {
+	margin-top:50px;
+	}
+		.section-title {
+
+		}
+			.section-title p {
+			color:rgb(74,0,18); text-shadow:0 1px 0 rgba(148,0,38,0.9);
+			}
+			.section-title p.title {
+			width:100%; text-align:center; font-size:1.3em;
+			}
+	#footer {
+	width:100%; padding:40px 0; text-align:center; font:400 0.7em 'Nixie One',sans-serif; text-shadow:0 -1px 0 black;
+	}
+#bottom {
+
+}

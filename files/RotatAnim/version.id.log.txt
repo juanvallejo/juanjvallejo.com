@@ -1,0 +1,32 @@
+*Production Version = '_'+current version's ID #add a '_' at the end for the minified version.
+-----production domaincheck--------
++ !PRODUCTION VERSION - DOES NOT WORK OUTSIDE OF PRODUCTION DOMAIN!
+
+	var _DomainCheck = function() {
+		var r = true;
+		if(window.location.protocol == "file:") r = false;
+		else if(window.location.hostname != "www.juanjvallejo.com") r = false;
+		return r;
+	}();
+	if(!_DomainCheck) return;
+
+-----end production domaincheck----
+
+
+Version 0.4.4
+ID: b4efa3644e4f0126269a142a2c9b6ff2
+Updated 11/30/13
+Distributed to: Aman Arora <aroraaman2709@gmail.com>
+
+Bug fix: Fixed a bug that re-executed the first call to the main function. Caused by interrupting the animation, calling the main function a second time with a different degree.
+
+
+
+
+Version 0.4.5
+ID: f57447964aeecfe76cb3b1861897c05a
+Updated 12/04/13
+Last updated 12/15/13
+Distributed to: Public
+
+Upgraded variable storage methods, code cleanup, compatibility with newer versions of jQuery added. Animation method upgraded to use “frames-per-second”. Animation now drops frames when necessary, according to device speed, speed is better adjustable / more sensitive.

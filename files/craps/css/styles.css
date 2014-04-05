@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Fenix);
+
+a {
+color:inherit; text-decoration:none;
+}
+body,html {
+width:100%;
+}
+body {
+font:normal 16px 'Fenix',sans-serif; color:#009E77; background:url(i/scratch.png);
+text-shadow:1px 1px 1px #ededed,-1px -1px 1px #707070;
+}
+
+#alert {
+font-family:'carto'; width:100%; text-align:center; float:left;
+}
+#alert p {
+text-shadow:0 0 0; opacity:0.9;
+}
+#effect_light {
+width:100%; height:570px; position:absolute; left:0; top:0; background:url(i/light.png) no-repeat center top fixed;
+}
+#effect_light-left {
+position:absolute; top:0; left:0;
+width:550px; height:600px; background:url(i/light-left.png) no-repeat top left fixed;
+}
+#effect_light-right {
+position:absolute; top:0; right:0;
+width:550px; height:600px; background:url(i/light-right.png) no-repeat top right fixed;
+}
+#footer {
+font-family:'carto'; font-size:0.9em; width:100%; text-align:center; margin:20px 0 10px 0;
+}
+#header {
+width:100%; text-align:center; margin:50px auto 0 auto; font-size:2.5em;
+}
+#wrapper {
+width:950px; margin:0 auto;
+}
+
+.block {
+position:absolute; top:0; left:0; width:100%; height:100%;
+}
+.blue {
+color:#006B8F;
+}
+.clear {
+width:100%; clear:both;
+}
+.content {
+width:100%; margin:100px auto 0 auto; position:relative; min-height:200px;
+}
+.dice {
+width:65px; height:65px; background:#dedede; float:left; margin:5px 0 0 13%; border-radius:3px;
+border:1px solid #00B88A; border-color:#00B88A #00D19D #00D19D #00B88A; position:relative; overflow:hidden;
+box-shadow:inset 0 0 10px #303030; -moz-box-shadow:inset 0 0 10px #000000; -webkit-box-shadow:inset 0 0 10px #303030;
+-o-box-shadow:inset 0 0 10px #000000; -ms-box-shadow:inset 0 0 10px #000000;
+}
+.dice ul.dot {
+width:100%; height:100%; display:block; position:relative; left:0; top:0;
+}
+.dice ul.dot li {
+width:100%; height:100px; position:absolute; left:0; top:0;
+}
+.link {
+cursor:pointer;
+}
+.link:hover {
+text-decoration:underline;
+}
+.menu {
+width:84%; margin:0 auto 0 auto; height:10px;
+}
+.menu span:hover {
+cursor:default;
+}
+.menu li.story {
+display:inline; float:left; padding:10px; text-align:center; width:215px; height:215px;
+line-height:39px; letter-spacing:1.6px; margin:0 20px 40px 20px; font-size:1.5em; position:relative;
+box-shadow:inset 0 0 6px #3e3e3e; -moz-box-shadow:inset 0 0 6px #3e3e3e; background:rgba(0,133,99,0.08) url(i/pool_table.png);
+-webkit-box-shadow:inset 0 0 6px #3e3e3e; -o-border-radius:999px; -moz-border-radius:999px; border-radius:999px; -ms-box-shadow:inset 0 0 6px #3e3e3e; -webkit-border-radius:999px;
+}
+.menu li.story:active {
+box-shadow:inset 0 0 10px #303030; -moz-box-shadow:inset 0 0 10px #000000; -webkit-box-shadow:inset 0 0 10px #303030;
+-o-box-shadow:inset 0 0 10px #000000; -ms-box-shadow:inset 0 0 10px #000000;
+}
+.menu li.info {
+display:inline; float:left; padding:10px; text-align:center; width:200px; height:170px;
+line-height:39px; letter-spacing:1.6px; margin:0 20px 40px 20px; font-size:1em; position:relative;
+}
+.spanTitle {
+display:block; margin:10px 0;
+}

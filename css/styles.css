@@ -1,0 +1,224 @@
+html,body {
+width:100%; height:100%; font:normal 16px 'carto',sans-serif; color:#505050;
+}
+body {
+background:url(i/whitey.png);
+}
+
+#container {
+width:750px; height:180px; margin:0 auto 20px auto; padding:8px;
+}
+#footer {
+width:100%; padding:20px 0 20px; margin:15px 0 10px 0; font-size:0.78em; text-align:center;
+float:left;
+}
+#header {
+width:100%; height:100px; text-align:center; padding:50px 0 0; margin:0 auto 10px auto;
+}
+#header #name {
+	width:100%; font-size:1.5em;
+}
+#header #nav {
+	width:100%; height:25px; text-align:center; margin:25px auto 0 auto;
+}
+#header #nav ul {
+	display:block; width:100%;
+}
+#header #nav ul li {
+	display:inline; width:100px; margin:0 10px;
+}
+#login {
+width:100%; margin:0 auto 0 auto; min-height:100px; background:url(i/login_bg.png);
+border-bottom:1px solid white; display:none;
+}
+#overlay {
+width:100%; height:100%; background:rgba(255,255,255,0.7); position:fixed; top:0; left:0;
+z-index:5; display:none;
+}
+#post_content {
+height:150px;
+}
+#post_image {
+width:30%; float:right; min-height:10px; text-align:right; cursor:pointer;
+padding:25px 0 0 0; overflow-x:hidden;
+}
+	#post_image:hover {
+	text-decoration:underline;
+	}
+	#post_image_input {
+	display:none;
+	}
+#post_title {
+font-size:3em;
+}
+#terminal {
+width:100%; height:96%; padding:2% 0 2% 0; text-align:center; color:#f0f0f0;
+margin:0; background:transparent; font:inherit; font-size:3em; border:0;
+}
+#wrapper {
+width:950px; margin:20px auto 0 auto; position:relative;
+}
+
+.active {
+color:#cd3700; border-bottom:1px solid #cd3700;
+}
+.alert {
+width:100%; padding:5px; display:none; text-align:center; color:inherit; float:left;
+}
+.box {
+width:670px; min-height:100px; background:rgba(194,194,194,0.7); border-radius:2px;
+padding:5px 15px 5px 15px; position:inherit; top:35%; left:50%; margin-left:-350px; display:none;
+}
+	.box_input {
+	width:100%; background:transparent; font:inherit; min-height:40px; padding:10px 0 10px 0;
+	color:#333; border:0;
+	}
+.button {
+width:100px; border:1px solid #a0a0a0; text-align:center; padding:5px;
+margin:15px; border-radius:4px; opacity:0.7; cursor:pointer;
+} .button:hover {
+opacity:1.0;
+}
+.clear {
+width:100%; padding-top:5px;
+}
+.comments {
+width:100%; margin:20px 0 0; float:left;
+}
+.comment-item {
+float:left;display:block;width:100%; margin:10px 0 10px;
+}
+.content a {
+text-decoration:underline;
+}
+.form {
+width:100%; float:left;
+}
+.form form {
+padding:10px 0 0;
+}
+.form form input {
+padding:5px; font:inherit; color:inherit; display:block; margin:15px;
+}
+.form form textarea {
+padding:5px; display:block; margin:15px; font:inherit; color:inherit;
+}
+.form .alert {
+margin:15px 0 0;
+}
+.form .title {
+font-size:1.2em; width:100%;
+}
+.hidden {
+display:none;
+}
+.input {
+padding:5px; width:185px; font:inherit; color:inherit; border:1px solid #777;
+background:rgba(255,255,255,0.8); border-radius:3px;
+}
+.item {
+width:218px; height:264px; float:left; margin:20px 15px 10px;
+overflow-y:hidden; border-radius:4px; border:1px solid #a0a0a0;
+border-bottom-width:3px; opacity:0.7;
+} .item:hover {
+	opacity:1.0;
+}
+.item .body {
+width:100%; margin:10px 0 0; text-align:center;
+}
+.item .body .content {
+font-size:0.9em; margin:10px 0 0;
+}
+.item .body .title {
+font-size:1.1em; width:100%; text-align:center;
+}
+.item .img {
+	width:100%; height:170px; background-size:100%;
+	border-style:solid; border-width:0 0 1px 0; border-color:#a0a0a0;
+}
+.item .img a {
+display:block; width:100%; height:100%;
+}
+.loginform {
+width:100%;
+}
+.loginform input {
+padding:5px; margin:10px 0 10px 0; display:block; font:inherit; color:inherit; border:0;
+border-radius:2px; background:url(i/input_bg.png); width:96%; border-bottom:1px solid #333;
+}
+.login-container {
+width:200px; margin:0 auto 0 auto;
+}
+.post {
+width:100%; float:left; margin:40px 0; font-size:0.906em;
+}
+.post .image {
+width:100%; margin-bottom:20px; text-align:center;
+}
+.post .image img {
+}
+.post .left {
+float:left; width:150px; font-size:0.823em; text-align:right; margin:0 50px 0 0;
+color:#7e7e7e;
+}
+.post .left ul {
+display:block; float:right; width:100%;
+}
+.post .left li {
+margin:0 0 3px 0; display:block; float:right; width:100%;
+}
+.post .right {
+float:left; width:550px; position:relative;
+}
+.post .right .title {
+width:100%; float:left; margin:0 0 15px; color:#505050; font-size:1.1em;
+text-transform:capitalize;
+}
+.post .right .content {
+width:100%; float:left; color:#737373; line-height:1.25em;
+}
+.post-comment {
+opacity:0.8; width:100%; margin:80px 0 0; float:left;
+}
+.post-comment:hover {
+opacity:1.0;
+}
+.post_delete {
+position:absolute; right:0; top:0; min-width:10px; opacity:0.7; cursor:pointer;
+}
+	.post_delete:hover {
+	opacity:1.0; text-decoration:underline;
+	}
+.response {
+width:100%; text-align:center;
+}
+.textarea {
+padding:5px; font:inherit; color:inherit; border:1px solid #777;
+background:rgba(255,255,255,0.8); border-radius:3px;
+}
+
+/*font style classes*/
+.light-font {
+color:#888;
+}
+.normal-font {
+color:#505050;
+}
+.tagline {
+font-size:1.06em; color:#888;
+}
+.title {
+font-size:1.375em;
+}
+.underline:hover {
+border-bottom:1px solid #cd3700;
+}
+.underline-dotted:hover {
+border-bottom:1px dashed #cd3700;
+}
+
+a {
+color:inherit; text-decoration:none;
+} a:hover {
+color:#cd3700;
+}
