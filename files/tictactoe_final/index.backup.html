@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Canvas Tic Tac Toe by Juan Vallejo</title>
+<script src="css/settings.js"></script>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container" id="header">
+			<p class="title left">Tic Tac Toe</p>
+			<p class="right">
+				<ol class="inline">
+					<li><a target="_blank" href="mailto:juuanv@gmail.com">contact</a></li>
+					<li><a href="#setup">setup</a></li>
+				</ol>
+			</p>
+		</div><!--#header-->
+		<div id="game" class="box" style="background-color:transparent;">
+			<canvas id="canvas" width="760" height="390"></canvas><!--#canvas-->
+			<div id="banner">
+				<script type="text/javascript" src="http://promote.snap.ps/promote?action=embed&partnerId=98513462&siteId=98613462"></script>
+			</div><!--#banner-->
+		</div><!--#game-->
+		<div id="setup" class="container box">
+			<p class="title">Quick set-up guide</p>
+			<p>
+				This is a quick-setup article to guide you on installing Canvas Tic Tac Toe on your server.
+			</p>
+			<p>
+				<ol>
+					<li>1. Unzip the contents of the file you downloaded and place them in a folder in your desktop, or another readily accessible folder.</li>
+					<li>2. Open or download your favorite FTP client such as <a href="http://filezilla-project.org/">FileZilla</a> or Cyberduck, and connect to your server.</li>
+					<li>3. Navigate to a public html folder within your server (usually the folder containing your main <b>index.html</b> page) and create a new folder named <b>tictactoe</b> within.</li>
+					<li>4. Place the contents of the unzipped folder in your desktop from step one inside of the newly created folder on your server.</li>
+					<li>5. If you have followed the above instructions correctly, you should now be able to go to <b>www.yourwebsite.com/tictactoe</b> and be able to see a page much like this one.</li>
+				</ol>
+			</p>
+			<p>If you still find you need help setting up the game on your server, feel free to <a target="_blank" href="mailto:juuanv@gmail.com">send me an email.</a></p>
+		</div><!--#setup-->
+		<div id="extra" class="container box">
+			<p class="title">Configuration</p>
+			<p>
+				This explains how to change the <b>X</b> and <b>O</b> icons in the game.
+			</p>
+			<p>
+				<ol>
+					<li>1. Open the file named <b>config.js</b> that came with the game files.</li>
+					<li>2. In this file, find <b>iconForX</b> and set its value to the path to an image (e.g. <b>&#39;icons/o.png&#39;</b>). Do the same for <b>iconForO</b>.</li>
+					<li></li>
+					<li>If the images exist, and the path specified is correct, you should now see your new icons in the game instead of the default <b>X</b>&#39;s and <b>O</b>&#39;s.</li>
+				</ol>
+			</p>
+			<p>If you do not see a <b>config.js</b> file then you don't have the latest version of the game, head <a target="_blank" href="http://codecanyon.net/item/tic-tac-toe/3655909">here to update!</a></p>
+		</div><!--#extra-->
+		<div class="container" id="footer">
+			<p class="left">
+				<ol class="inline_left">
+					<li>&copy; Canvas Games by Techboxcoding</li>
+				</ol>
+			</p>
+		</div><!--.container-->
+	</div><!--#wrapper-->
+</body>
+</html>

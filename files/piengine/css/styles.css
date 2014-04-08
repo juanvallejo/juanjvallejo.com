@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Marcellus);
+
+a {
+text-decoration:none; color:inherit;
+}
+body,html {
+width:100%; font:normal 16px 'carto'; color:#f0f0f0;
+}
+body {
+background:url(i/grid.png); font-size:16px;
+}
+
+#canvas {
+width:800px; height:500px; margin:30px auto 0 auto; display:block; border-radius:5px;
+border-width:1px; border-style:solid; border-color:#bebebe;
+-moz-box-shadow: 0 0 5px #888;-webkit-box-shadow: 0 0 5px#888; box-shadow: 0 0 5px #888;
+background-image:url(i/bg.jpg);background-repeat:no-repeat;background-size:100%;
+}
+#wrapper {
+width:900px; margin:0 auto 0 auto;
+}

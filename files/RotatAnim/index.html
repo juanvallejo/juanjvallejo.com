@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Rotation Animation</title>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/_f57447964aeecfe76cb3b1861897c05a.js"></script>
+<script>
+window.onload = function() {
+	$.fn.rotate.serialize();
+
+	var isRotating = false;
+	$('#centerpiece').on('mouseenter',function() {
+		if(!isRotating) {
+			isRotating = true;
+			$('#gear1').rotate(360,{speed:140},function() {
+				$(this).rotate(0);
+				if(isRotating) isRotating = false;
+			});
+			$('#gear2').rotate(360,{speed:110},function() {
+				$(this).rotate(0);
+				if(isRotating) isRotating = false;
+			});
+		}
+	});
+	$('#centerpiece').on('mouseleave',function() {
+		if(isRotating) {
+			$('#gear1').rotate(0,{speed:155});
+			$('#gear2').rotate(0,{speed:160},function() {
+				if(isRotating) isRotating = false;
+			});
+		}
+	});
+};
+function demo1() {
+	$('#gear2').rotate(200,{speed:120},function() {
+		$('#gear1').rotate(-100);
+	})
+}
+function demo2() {
+	$('#gear1').rotate(300);
+	$('#gear2').rotate(50);
+}
+</script>
+</head>
+<body>
+<div id="top"></div><!--#top-->
+<div id="wrapper">
+	<div id="header"></div><!--#header-->
+	<div id="centerpiece">
+		<div id="gear2" class="gear"></div><!--.gear-->
+		<div id="gear1" class="gear"></div><!--.gear-->
+		<div id="brand">Rotation Animation</div><!--#brand-->
+	</div><!--#centerpiece-->
+	<div class="note note-clear" id="nav">
+		<div class="note-content">
+			<ul id="menu-item-holder">
+				<li>Home</li>
+				<li>Docs</li>
+				<li>Demos</li>
+				<li>Download</li>
+				<li>Contact</li>
+			</ul>
+		</div><!--.note-content-->
+	</div>
+	<div class="note-group first-child" id="home">
+		<div class="note section">
+			<div class="note-content">
+				<p class="title"><a target="_blank" href="http://codecanyon.net/item/jquery-rotation-animation-plugin/2696696">Rotation Animation <span class="num RotatAnimVar">v {RotatAnim.getVersionNumber}</span></a></p>
+				<p>A jQuery plugin that animates the rotation of elements by adding the <span>.rotate( )</span> method. Hover over the gears above to see a demo. The syntax for this demo is shown below.</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax" id="demo-syntax">
+				<pre>
+				$('.gear_container').on('mouseenter',function() {
+				  $('#gear_one').rotate(360);
+				  $('#gear_two').rotate(360,{speed:90});
+				});
+				//the fastest direction to reach the specified degree
+				//is automatically detected
+
+				$('.gear_container').on('mouseleave',function() {
+				  $('#gear_one').rotate(0);
+				  $('#gear_two').rotate(0);
+				});
+				//once rotation is finished, the last degree reached
+				//is saved. The next rotation for that element begins
+				//there
+				</pre>
+			</div><!--.note-syntax-->
+		</div><!--.note-syntax-->
+		<div class="note section">
+			<div class="note-content note-clickable note-label" id="demo-button">
+				<p>View more demos</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+	</div><!--.note-group-->
+	<div class="note-group" id="demos">
+		<div class="section-title section">
+			<p class="title">Demos</p>
+		</div><!--.section-title-->
+		<div class="note section">
+			<div class="note-content note-label note-clickable" onclick="demo1();">
+				<p>Rotate <span>small gear</span> to <span>200&deg;</span>, <span>big gear</span> to <span>-100&deg;</span></p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				//click the button above to start the demo
+				
+				$('#small_gear').rotate(200,function() {
+				  $('#big_gear').rotate(-100);
+				});
+				</pre>
+			</div><!--.note-syntax-->
+		</div><!--.note-->
+		<div class="note section">
+			<div class="note-content note-label note-clickable" onclick="demo2();">
+				<p>Rotate <span>small gear</span> to <span>50&deg;</span> and <span>big gear</span> to <span>300&deg;</span></p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				$('#small_gear').rotate(50);
+				$('#big_gear').rotate(300);
+				</pre>
+			</div><!--.note-syntax-->
+		</div><!--.note-->
+	</div><!--.note-group-->
+	<div class="note-group" id="docs">
+		<div class="section-title section">
+			<p class="title">Documentation</p>
+		</div><!--.section-title-->
+		<div class="note section">
+			<div class="note-content">
+				<p class="title">Basics <span>Syntax</span></p>
+				<p>RotationAnimation integrates seamlesssly with jQuery. Its syntax is simple and quick to use.</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				//Rotating any element with Rotation Animation
+
+				$('#myElement').rotate(45);
+				</pre>
+			</div><!--.note-styntax-->
+		</div><!--.note-->
+		<div class="note section">
+			<div class="note-content">
+				<p class="title">Basics <span>Setup</span></p>
+				<p>To use Rotation Animation, place JavaScript script tags inside your header tags. Using the plugin is as simple as calling its jQuery function and giving it an integer.</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				&lt;script&gt;
+				  $(document).ready(function() {
+				    $('#myElement').rotate(90); //rotates elem to 90&deg;
+				  });
+				&lt;/script&gt;
+				</pre>
+			</div><!--.note-styntax-->
+		</div><!--.note-->
+		<div class="note section">
+			<div class="note-content">
+				<p class="title">Basics <span>Speed</span></p>
+				<p>RotationAnimation uses frame-by-frame animation. By default, the rotation speed is set to increment <span>1&deg;</span> per frame.</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				$('#myElement').rotate(90,{speed:100});
+				//100 is the default speed value
+
+				//The above element will rotate at the average speed
+				//until it reaches 90&deg;
+				</pre>
+			</div><!--.note-styntax-->
+		</div><!--.note-->
+		<div class="note section">
+			<div class="note-content">
+				<p class="title">Looping<span></span></p>
+				<p>Loops are set to false by default. Looping will rotate an element in the direction closest to <span>0&deg;</span> indefinitely.</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				$('#myElement').rotate('loop');
+				//The above code will rotate the element indefinintely
+
+				$('#myElement').rotate(-30,{loop:true});
+				//The above code will loop the element to the left
+				</pre>
+			</div><!--.note-styntax-->
+		</div><!--.note-->
+		<div class="note section">
+			<div class="note-content">
+				<p class="title">Callback Functions<span></span></p>
+				<p>These functions are executed once the looping animation for an element has been completed. They are passed after specifying a degree or settings.</p>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-syntax">
+				<pre>
+				$('#myElement').rotate(-100,function() {
+				  $(this).rotate(0);
+				});
+				//The element will rotate to -100&deg; and then
+				//rotate back to 0&deg;
+
+				$('#myElement').rotate(300,{speed:200},function() {
+				  $('#mySecondElement').rotate(100);
+				});
+				//The second element will not rotate until the first
+				//one has finished rotating
+				</pre>
+			</div><!--.note-styntax-->
+		</div><!--.note-->
+		<div class="note section">
+			<div class="note-content">
+				<p class="title">Functionality <span>Features</span></p>
+				<p>While <span>RotationAnimation</span> provides an extremely simple syntax, it comes with many useful background features.</p>
+			</div><!--.note-content-->
+			<div class="note-syntax note-fold">
+				<p>
+					<ul class="medium-spacing">
+						<li>The fastest way to reach the specified degree is automatically calculated. This means the plugin will rotate an element left or right as it deems necessary.<br /></li>
+						<li>The plugin features continuous animation. This means that you can call the <span>.rotate( )</span> method more than once on the same element, and it will pick up where it left off for subsequent animations.</li>
+						<li><span>RotationAnimation</span> features frame-by-frame animation, providing consistent animation. This allows for constant animation "speeds" accross different platforms.</li>
+						<li>Callback functions are handled individually per instance. Looping is managed on an element-by-element basis, preventing a looping element from affecting any other.</li>
+					</ul>
+				</p>	
+			</div><!--.note-fold-->
+		</div><!--.note-->
+	</div><!--.note-group-->
+	<div class="note-group" id="download">
+		<div class="section-title section">
+			<p class="title">Download</p>
+		</div><!--.section-title-->
+		<div class="note section">
+			<a class="note-content note-clickable" href="http://codecanyon.net/item/jquery-rotation-animation-plugin/2696696" target="_blank">
+				<p class="title">Rotation Animation <span class="num RotatAnimVar">v {RotatAnim.getVersionNumber}</span></p>
+				<p>Click to download the latest version of <span>Rotation Animation</span> from CodeCanyon. See version changelog below.</p>
+			</a><!--.note-content-->
+			<div class="note-syntax note-fold">
+				<p class="title">Change log</p>
+				<p>
+					<ul class="RotatAnimVar">{RotatAnim.parseVersionChangelog}</ul>
+				</p>
+			</div><!--.note-syntax-->
+		</div><!--.note-->
+	</div><!--.note-group-->
+	<div class="note-group" id="contact">
+		<div class="section-title section">
+			<p class="title">Contact</p>
+		</div><!--.section-title-->
+		<div class="note section">
+			<div class="note-syntax note-input">
+				<input type="text" placeholder="Email" class="_contact-form-item"/>
+				<textarea rows="5" cols="1" placeholder="Message" class="_contact-form-item"></textarea>
+			</div><!--.note-content-->
+		</div><!--.note-->
+		<div class="note">
+			<div class="note-content note-clickable note-label" id="submit">
+				<p>Submit</p>
+			</div><!--.note-content-->
+			<div class="note-syntax note-fold hidden">
+				<p class="label">There was an error, please try again later.</p>
+			</div><!--.note-fold-->
+		</div><!--.note-->
+	</div><!--.note-group-->
+	<div id="footer">&copy; 2013, Version ID <span class="RotatAnimVar">({RotatAnim.getVersionID})</span></div><!--#footer-->
+</div><!--#wrapper-->
+<div id="fx-overlay" class="fx"></div><!--#fx-overlay-->
+<div id="fx-noise" class="fx"></div><!--#fx-noise-->
+</body>
+</html>

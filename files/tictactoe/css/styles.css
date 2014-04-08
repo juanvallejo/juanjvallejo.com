@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Marcellus);
+
+a {
+text-decoration:none; color:inherit;
+}
+body,html {
+width:100%; font:normal 16px 'carto'; color:#f0f0f0;
+}
+body {
+background:url(i/grid.png); font-size:16px;
+}
+
+#canvas {
+width:760px; height:390px; background-color:rgba(0,61,82,1); margin:30px auto 0 auto; display:block;
+border-width:1px; border-style:solid; border-color:#bebebe #f0f0f0 #f0f0f0 #bebebe;
+}
+#wrapper {
+width:900px; margin:0 auto 0 auto;
+}

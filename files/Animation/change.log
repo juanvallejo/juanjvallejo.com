@@ -1,0 +1,5 @@
+May 10, 2013
+
+By using lib, we keep the reference to a method static, globally using it between all of the divs in the DOM tree affected by Animation. Hopefully memory is conserved through this, and animation management is improved. This can most certainly be changed in the future, should each DOM object require unique animation frame settings.
+
+By using the A reference passed to the volatile methods as a parameter, we erase the global variable concept and turn to a unique and tailored experience for each div. This allows for simultaneous DOM object interaction.

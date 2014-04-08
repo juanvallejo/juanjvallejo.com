@@ -1,0 +1,10 @@
+[29-Oct-2012 21:37:33 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/home.php on line 33
+[29-Oct-2012 21:37:36 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/home.php on line 33
+[29-Oct-2012 21:37:57 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/home.php on line 33
+[29-Oct-2012 21:37:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/home.php on line 33
+[01-Nov-2012 03:11:15 UTC] PHP Fatal error:  Call to undefined function addOptions() in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/updateFormSettings.php on line 50
+[01-Nov-2012 03:13:55 UTC] PHP Fatal error:  Call to undefined function addOptions() in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/updateFormSettings.php on line 50
+[01-Nov-2012 03:16:18 UTC] PHP Fatal error:  Call to undefined function addOptions() in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/updateFormSettings.php on line 50
+[01-Nov-2012 20:24:38 UTC] PHP Parse error:  syntax error, unexpected T_LNUMBER, expecting T_VARIABLE or '$' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/updateFormSettings.php on line 49
+[01-Nov-2012 20:24:55 UTC] PHP Parse error:  syntax error, unexpected T_LNUMBER, expecting T_VARIABLE or '$' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/updateFormSettings.php on line 49
+[01-Nov-2012 20:25:45 UTC] PHP Parse error:  syntax error, unexpected T_LNUMBER, expecting T_VARIABLE or '$' in /home/spujet/public_html/juanjvallejo.com/files/sujiproject/admin/updateFormSettings.php on line 49

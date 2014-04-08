@@ -1,0 +1,11 @@
+body {
+background:url(i/fabric.png);
+}
+
+#game {
+position:absolute; top:20px; left:50%; margin:0 0 0 -300px;
+}
+
+#pos {
+width:575px; margin:30px auto 0 auto; font:normal 13px 'Myryad Pro';
+}

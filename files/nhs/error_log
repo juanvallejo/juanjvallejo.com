@@ -1,0 +1,15 @@
+[06-Jun-2012 17:38:46] PHP Parse error:  syntax error, unexpected ')' in /home/cabowles/public_html/juanjvallejo.com/files/nhs/upload.php on line 3
+[07-Jun-2012 07:35:24] PHP Parse error:  syntax error, unexpected ')' in /home/cabowles/public_html/juanjvallejo.com/files/nhs/upload.php on line 12
+[07-Jun-2012 08:23:13] PHP Warning:  Missing argument 1 for Upload::truncateTable(), called in /home/cabowles/public_html/juanjvallejo.com/files/nhs/upload.php on line 27 and defined in /home/cabowles/public_html/juanjvallejo.com/files/nhs/upload.php on line 46
+[07-Jun-2012 10:22:24] PHP Warning:  shell_exec() [<a href='function.shell-exec'>function.shell-exec</a>]: Unable to execute 'ps -x' in /home/cabowles/public_html/juanjvallejo.com/files/nhs/kill.php on line 17
+[24-Jul-2012 11:52:35] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[24-Jul-2012 11:52:48] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[24-Jul-2012 11:52:57] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[31-Jul-2012 19:48:17] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[31-Jul-2012 19:54:30] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[06-Aug-2012 13:57:00] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[07-Aug-2012 14:16:16] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[12-Aug-2012 21:43:52] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[12-Aug-2012 21:53:49] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[12-Aug-2012 21:54:06] PHP Warning:  Module 'zip' already loaded in Unknown on line 0
+[12-Aug-2012 21:54:17] PHP Warning:  Module 'zip' already loaded in Unknown on line 0

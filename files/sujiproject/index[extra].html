@@ -1,0 +1,23 @@
+<!doctype html> 
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Test 2adpro [modified]</title>
+<link rel='stylesheet' href='css/styles.css' />
+<script src='admin/init.js'></script>
+<script src='js/jquery.js'></script>
+<script src='js/jquery.2adproquiz.js'></script>
+<script>
+$(document).ready(function() {
+	$('#quiz-container').ad2profxnz({
+		questions: init.questions, 
+		resultComments: init.resultComments,
+		twitterStatus: 'Woo! I got {score} on the quiz.'
+	});
+});
+</script>
+</head>
+<body>
+<div id='quiz-container'></div>
+</body>
+</html>

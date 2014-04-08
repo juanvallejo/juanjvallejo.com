@@ -1,0 +1,16 @@
+body {
+width:100%; font:300 1em Sans-serif;
+}
+
+#messages {
+width:100%; min-height:100px;
+}
+#textbox {
+width:100%; height:30px; 
+}
+	#textbox input {
+	width:100%; border:0; padding:5px 0; height:100%; font:inherit; color:inherit;
+	}
+#wrapper {
+width:900px; margin:10% auto 0 auto;
+}

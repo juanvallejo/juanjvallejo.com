@@ -1,0 +1,25 @@
+.jumbotron:first-child {
+background:url(../img/stem_logo.png) no-repeat center center; background-size:74%; min-height:311px; position:relative; z-index:99;
+}
+	.pic {
+	position:absolute; height:250px; width:190px;
+	}
+
+	.pic-left {
+	left:-90px; background:url(../img/thumbs/2.jpg) no-repeat 0 0; background-size:100%;
+	transform:rotate(-6deg); border:5px solid rgba(228,230,229,0.9);
+	-ms-transform:rotate(-6deg); /* IE 9 */
+	-webkit-transform:rotate(-6deg);
+	-moz-transform:rotate(-6deg);
+	}
+	.pic-right {
+	right:-90px; background:url(../img/thumbs/7.jpg) no-repeat 0 0; background-size:100%;
+	transform:rotate(6deg); border:5px solid rgba(228,230,229,0.9); height:200px;
+	-ms-transform:rotate(6deg); /* IE 9 */
+	-webkit-transform:rotate(6deg);
+	-moz-transform:rotate(6deg);
+	}
+
+p.intro-top {
+margin-bottom:20px;
+}

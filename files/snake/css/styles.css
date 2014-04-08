@@ -1,0 +1,19 @@
+html,body {
+width:100%; font:normal 12px 'carto',sans-serif; color:#777;
+}
+
+#snake {
+width:30px; height:30px; position:absolute; background:#bebebe;
+border:1px solid #999; border-color:#d0d0d0 #999 #999 #d0d0d0;
+left:0; top:0;
+}
+
+#prey {
+width:30px; height:30px; position:absolute; background:#333;
+left:0; top:0; border-radius:999px;
+}
+
+#kill {
+width:310px; height:60px; padding:10px; text-align:center; margin:20% auto 0 auto;
+font-size:100px; display:none;
+}

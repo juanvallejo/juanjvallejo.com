@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Canvas Tic Tac Toe</title>
+<link rel="stylesheet" href="reset.css"/>
+<link rel="stylesheet" href="styles.css"/>
+<script src="config.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="game" class="box" style="background-color:transparent;">
+			<canvas id="canvas" width="760" height="390"></canvas><!--#canvas-->
+		</div><!--#game-->
+		<div style="width:100%;height:23px;clear:both;"></div>
+		<div id="extra" class="container box">
+			<p class="title">Canvas Tictactoe</p>
+			<p>
+				A javascript game written with the html5 <b>canvas</b> api.
+			</p>
+			<p>
+				<ol>
+					<li>Try your skills against the computer, or against a friend.</li>
+					<li>Select an option above to get started!</li>
+				</ol>
+			</p>
+			<p></p>
+		</div><!--#setup-->
+		<div class="container" id="footer">
+			<p class="left">
+				by Juan Vallejo
+			</p>
+		</div><!--.container-->
+	</div><!--#wrapper-->
+<script src="tictactoe.js"></script>
+</body>
+</html>

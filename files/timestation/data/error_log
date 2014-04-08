@@ -1,0 +1,2 @@
+[15-May-2013 06:08:47 America/New_York] PHP Parse error:  syntax error, unexpected '[' in /home/spujet/public_html/juanjvallejo.com/files/timestation/data/post.php on line 6
+[15-May-2013 06:11:04 America/New_York] PHP Fatal error:  Class 'ImgResizer' not found in /home/spujet/public_html/juanjvallejo.com/files/timestation/data/post.php on line 8

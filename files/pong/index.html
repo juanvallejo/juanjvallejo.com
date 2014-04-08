@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+	<title>Canvas Pong</title>
+	<script src="data/data.public.min.js"></script>
+	<link rel="stylesheet" href="data/reset.css"/>
+	<link rel="stylesheet" href="data/styles.css"/>
+<script>
+window.addEventListener('load',function() {
+	var text = "<iframe src=\"http://promote.snap.ps/promote?action=get&p=98513462&s=98613464\" frameborder=\"0\" width=\"320\" height=\"50\" marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\"></iframe>";
+	document.getElementById("footer").innerHTML = text;
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="note">
+			<div class="note-title">Canvas Pong</div><!--#content-title-->
+			<p>Canvas Pong is the classic game of Pong re-created in JavaScript and HTML5. To get started playing, simply select a game-mode, choose a difficulty, and move the paddle with your keyboard's arrow keys.</p>
+			<p>To pause a game, press <b>P</b> <b>Esc</b> or <b>R</b></p>
+			<p>Press again any of these keys to resume playing. To change different <b>settings</b> click on the Pong logo.</p>
+		</div><!--#content-wrapper-->
+		<div id="canvas-wrapper">
+			<div class="vert-shader-1 right"></div><!--.shader-->
+			<div class="hor-shader-1 bottom"></div><!--.shader-->
+			<canvas id="canvas" width="750" height="450"></canvas>
+		</div><!--#canvas-wrapper-->
+		<div id="footer" class="note note-dark" style="padding:10px 0 0 0;margin-top:70px;width:350px;">
+			<p>Made by Juan Vallejo</p>
+		</div><!--.note-->
+	</div><!--#wrapper-->
+</body>
+</html>

@@ -1,0 +1,181 @@
+ img { background:no-repeat;   behavior: url(iepngfix.htc);}
+body               {  margin:0 auto; width:100%;padding:0px; background-color:#FFFFFF; font-family:Arial, Helvetica, sans-serif } 
+.container         { width:100%;                                                                                                 }
+.content           { width:100%;margin:0 auto;	min-height:405px; background:url(images/top_panel.jpg) #FFFFFF repeat-x;        }
+.content_panel         {  width:960px;margin:0 auto;               }
+.logo              { float:left; width:320px; font-size:30px; margin-left:20px; margin-top:25px; color:#0000                     }
+
+.logo   a          { text-decoration:none;color:#000000;  font-size:30px;}
+.header_div {float:left;width:940px;}
+.top_link          { color:#000000; float:left; width:600px;     behavior: url(iepngfix.htc);margin-top:25px;
+                      }
+.top_link a        { color:#000000;    text-decoration:none; text-align:right; margin:10px;               } 
+.center_banner_panel{ width:960px; float:left; height:230px; border-bottom:#750083 5px solid; border-top:#750083 5px solid;
+                     padding:35px 0px; margin-top:20px;}
+.banner      { background:url(images/banner.jpg); width:600px; margin-left:10px; height:208px; float:left; }
+.chat_box      { background:url(images/chat_box.jpg); width:301px; height:222px; float:left; margin-left:20px;}
+.chat_title  {width:301px; text-align:center; float:left; font-size:24px;}
+.chat_text     {width:160px;text-align:left; float:left; font-size:14px; margin:3px 0px 0px 10px;}
+.chat_more    { margin-bottom:5px; font-size:18px; float:right}
+.center_panel   { width:960px; background:url(images/center_comm.png) no-repeat;   behavior: url(iepngfix.htc);  float:left; margin-top:20px;}
+.center_panel_title{ font-size:24px; width:700px;  font-weight:bold; color:#000000; float:left;}
+.center_panel_text   { font-size:14px;   width:100%; float:left; margin-top:10px;}
+.center_back_image { background:url(images/center_comm.png); width:960px; height:313px; float:left;}
+.footer            { color:#000000; width:960px; text-align:center; background-color:#949494; float:left; font-size:12px; }
+.footer a          { color:#FFFFFF; text-decoration:none; text-align:center; font-size:12px;                             }
+.menu              { float: right;  height:50px;  width: 960px; }
+.menu ul           { margin-left:0px;   height:26px; float:right; padding:0px; margin-top:8px; }
+.menu ul li {  list-style:none;  float:left; height:26px;  margin: 0px 0px; } 
+.menu ul li a {    color:#750083; text-decoration:none;  line-height:30px; }
+.menu ul li a:hover { color:#000000;  line-height:30px;    }
+
+.menu_bot_line {
+border-bottom:2px solid #750083;
+}
+table td{color:#750083 }
+.question { font-weight:bold; font-size:13px; margin-top:3px}
+.answer{font-size:13px;padding:5px}
+.loginbox_session {float:right;padding-right:30px;margin-top:10px;font-size:13px}
+.chatbox_withsession{margin-top:30px;width:100%; text-align:center}
+#listnav li{  list-style-type:decimal;
+  height:26px;  margin: 0px 0px; font-size:14px;text-align:left
+}
+.top_crv{ background:url(images/top_crv.jpg) center no-repeat; width:960px; height:39px; float:left;}
+.cen_crv{ background:url(images/cen_crv.jpg) center repeat-y;  width:960px; height:auto;  float:left;}
+.btm_crv{ background:url(images/btm_crv.jpg) center no-repeat; width:960px; height:39px; float:left;}
+.cen_crv_text{  width:920px; margin: 0px 10px;}
+
+.remove_backgroundimage {background-image:none}
+.adjwidth{width:550px}
+/*
+a .menu-left {
+  background:url(images/lrc1.gif) no-repeat scroll 0 0;
+  float: left;
+  width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+}
+
+a:hover .menu-left,a.selected .menu-left {
+  background:url(images/lrc1.gif) no-repeat scroll;
+  background-position: 0px -26px;  
+  float: left;
+  width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  cursor: hand;
+}
+a:focus .menu-left,a.selected .menu-left {
+  background:url(images/lrc1.gif) no-repeat scroll;
+  background-position: 0px -26px;  
+  float: left;
+  width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  cursor: hand;
+}
+
+a:active .menu-left,a.selected .menu-left {
+  background:url(images/lrc1.gif) no-repeat scroll;
+  background-position: 0px -26px;  
+  float: left;
+  width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  cursor: hand;
+}
+
+
+
+a .menu-mid {
+  background:url(images/mrc1.gif) repeat scroll 0 0;
+  float: left;
+  height: 20px;
+  padding: 6px 4px 0px 4px;
+  display: block;
+  position: relative;  
+  color: #000;
+}
+
+a:hover .menu-mid , a.selected .menu-mid {
+  background:url(images/mrc1.gif) repeat scroll;
+  background-position: 0px -26px; 
+  float: left;
+  height: 20px;
+  padding: 6px 4px 0px 4px;
+  color: #000;
+  display: block;
+  position: relative;
+  cursor: hand;
+}
+a:focus .menu-mid , a.selected .menu-mid {
+  background:url(images/mrc1.gif) repeat scroll;
+  background-position: 0px -26px; 
+  float: left;
+  height: 20px;
+  padding: 6px 4px 0px 4px;
+  color: #000;
+  display: block;
+  position: relative;
+  cursor: hand;
+}
+a:active .menu-mid , a.selected .menu-mid {
+  background:url(images/mrc1.gif) repeat scroll;
+  background-position: 0px -26px; 
+  float: left;
+  height: 20px;
+  padding: 6px 4px 0px 4px;
+  color: #000;
+  display: block;
+  position: relative;
+  cursor: hand;
+}
+
+a .menu-right {
+  background:url(images/rrc1.gif) no-repeat scroll  0 0;
+  border:none;  
+  float: left;
+  width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  margin-right: 2px;
+}
+a:hover .menu-right, a.selected .menu-right {
+  background:url(images/rrc1.gif) no-repeat scroll;
+  background-position: 0px -26px;
+  float: left;
+ width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  margin-right: 2px;
+  cursor: hand;
+}
+a:focus .menu-right, a.selected .menu-right {
+  background:url(images/rrc1.gif) no-repeat scroll;
+  background-position: 0px -26px;
+  float: left;
+ width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  margin-right: 2px;
+  cursor: hand;
+}
+a:active .menu-right, a.selected .menu-right {
+  background:url(images/rrc1.gif) no-repeat scroll;
+  background-position: 0px -26px;
+  float: left;
+ width: 8px;
+  height: 26px;
+  display: block;
+  position: relative;
+  margin-right: 2px;
+  cursor: hand;
+}
+*/

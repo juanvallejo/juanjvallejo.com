@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8"/>
+<title>bounce by Metamorph Mobile [UNFINISHED DEMO]</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="css/jquery.bounce.min.js"></script>
+<script src="css/settings.js"></script>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+<script>
+$(document).ready(function() {
+	$("#object").click(function() {
+		$(this).bounce(3);
+	});
+});
+</script>
+</head>
+<body>
+<div id="effect_light"></div><!--#effect_light-->
+<div id="wrapper">
+	<div id="header">bounce</div><!--#header-->
+	<div id="content">
+		<div id="object"></div><!--#object-->
+		<div id="text">
+			<ul id="menu">
+				<li title="about">about</li>
+				<li title="download">download</li>
+				<li title="documentation">documentation</li>
+				<li title="help">help</li>
+			</ul>
+			<div id="about" class="hidden">
+				<p class="column" style="margin-right:80px;">Bounce is a jQuery plugin that provides the ability to animate
+				html elements with a bounce effect. It uses an equation of the sine curve to give html elements a bouncing animation.
+				This jQuery plugin is easy to use, and provides varying levels of animation, allowing the user to define an
+				element's speed, height of bounce, and even give an element a negative bounce.</p>
+				<p class="column" style="min-width:100px;">To see this plugin in action, click on the circle above.
+				Sample code for this demo:
+				<span class="displayBlock"><pre style="float:left;" class="code">
+$(document).ready(function() {
+	$("#object").click(function() {
+		$(this).bounce(3);
+	});
+});
+				</pre></span></p>
+			</div><!--#about-->
+			<div id="download" class="hidden">
+				<p class="column" style="margin-right:60px;">Buy this plugin at Codecanyon.net, link coming soon!</p>
+			</div><!--#projects-->
+			<div id="documentation" class="hidden">
+				<p class="column" style="margin-right:60px;">
+					<p class="title">Documentation</p>
+					<p>Documentation files coming soon...</p>
+				</p>
+			</div><!--#concepts-->
+			<div id="help" class="hidden">
+				<p class="title">Plugin Help</p>
+				<p class="column">Coming soon...</p>
+			</div><!--#apply-->
+			<div id="404" class="hidden">
+				<p class="title">We've lost him!</p>
+				<p class="column">
+					<span>The content you have requested cannot be found.</span>
+					<span>Additionally, a 404 error was encountered.</span>
+				</p>
+			</div><!--#404-->		
+		</div><!--#text-->
+	</div><!--#content-->
+	<div class="break"></div><!--.break-->
+	<div id="footer">&copy; Metamorph Mobile, LLC</div><!--#footer-->
+</div><!--#wrapper-->
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?php
+<<<<<<< HEAD
+$link = mysql_connect('localhost','spujet','metamorph2016') or die(mysql_error());
+if(mysql_select_db('spujet_jjv',$link)) return true;
+	else {die('There was an error connecting to the database');}
+=======
+if($link = mysql_connect('127.0.0.1','spujet','metamorph2016') or die(mysql_error())) {
+	if(mysql_select_db('spujet_jjv',$link)) return true;
+		else {
+			echo 'There was an error connecting to the database';
+		}
+} else {
+	die('Unable to connect to the database.'.mysql_error());
+}
+>>>>>>> e1228fd37ae41affeaae7c10ceea29bfdc22478d
+?>
