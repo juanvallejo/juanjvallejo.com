@@ -233,4 +233,8 @@ a {
 color:inherit; text-decoration:none;
 } a:hover {
 color:#cd3700;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e1228fd37ae41affeaae7c10ceea29bfdc22478d
