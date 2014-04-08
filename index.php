@@ -5,7 +5,7 @@ include('css/lib/config.php');
 <html lang="en-us">
 <head>
 <meta charset="UTF-8"/>
-<title>Juan Vallejo - Web Developer</title>
+<title>Juan Vallejo - Web Developer [git test]</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="css/settings.js"></script>
 <link rel="stylesheet" href="css/reset.css"/>
