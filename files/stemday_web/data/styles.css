@@ -1,12 +1,35 @@
+body {
+background:url(../img/bg.jpg) no-repeat 0 0 fixed; background-position:cover;
+}
+hr {
+border-color:rgba(0,0,0,0.1);
+}
+
+p.intro-top {
+margin-bottom:20px;
+}
+
+.button {
+
+}
+	.button-active {
+	background:#428bca; border-color:#357ebd; cursor:pointer; color:white;
+	}
+		.button-active:hover {
+		background:#357ebd;
+		}
+		.button-active:active {
+		box-shadow:inset 0 2px 1px rgba(0,0,0,0.1);
+		}
 .jumbotron:first-child {
 background:url(../img/stem_logo.png) no-repeat center center; background-size:74%; min-height:311px; position:relative; z-index:99;
 }
 	.pic {
-	position:absolute; height:250px; width:190px;
+	position:absolute; height:242px; width:190px;
 	}
 
 	.pic-left {
-	left:-90px; background:url(../img/thumbs/2.jpg) no-repeat 0 0; background-size:100%;
+	left:-90px; background:url(../img/thumbs/6.jpg) no-repeat 0 0; background-size:100%;
 	transform:rotate(-6deg); border:5px solid rgba(228,230,229,0.9);
 	-ms-transform:rotate(-6deg); /* IE 9 */
 	-webkit-transform:rotate(-6deg);
@@ -19,7 +42,16 @@ background:url(../img/stem_logo.png) no-repeat center center; background-size:74
 	-webkit-transform:rotate(6deg);
 	-moz-transform:rotate(6deg);
 	}
+.carousel-control {
+cursor:pointer;
+}
+.register-button {
+text-align:center;
+}
 
-p.intro-top {
-margin-bottom:20px;
+.navbar {
+background:rgba(248,248,248,0.75);
+}
+.row {
+background:rgba(0,0,0,0.1); border-radius:6px; padding-left:20px;
 }
