@@ -53,5 +53,11 @@ text-align:center;
 background:rgba(248,248,248,0.75);
 }
 .row {
-background:rgba(0,0,0,0.1); border-radius:6px; padding-left:20px;
+background:rgba(0,0,0,0.1); border-radius:6px; 
+}
+.well {
+margin-top:20px; background:transparent; border:0;
+}
+.list-group-item {
+background:transparent; border:0;
 }
