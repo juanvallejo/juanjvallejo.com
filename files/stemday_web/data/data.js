@@ -29,7 +29,7 @@ window.onload = function() {
 					};
 
 					var img = new Image();
-					img.src = '../img/thumbs/'+(slider.slides.length+1)+'.jpg';
+					img.src = 'img/thumbs/'+(slider.slides.length+1)+'.jpg';
 					img.addEventListener('load',function() {
 						this.className = 'img-responsive';
 						slide.appendChild(this);
