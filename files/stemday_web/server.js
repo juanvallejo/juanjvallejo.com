@@ -1,4 +1,5 @@
-var fs = require('fs'),server = require('http').createServer(server).listen(8000);
+var fs = require('fs');
+var server = require('http').createServer(server).listen(8000);
 
 function server(req,res) {
 		var Type = {
