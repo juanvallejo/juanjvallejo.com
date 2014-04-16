@@ -88,7 +88,7 @@ window.onload = function() {
 
 	//make page slide to local href instead of jumping
 	var a = document.getElementsByTagName('a');
-	var triggs = ['#register','#pics'];
+	var triggs = ['#register','#pictures'];
 
 	for(var i=0;i<a.length;i++) {
 		a[i].addEventListener('click',function(e) {

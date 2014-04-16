@@ -1,9 +1,19 @@
+body {
+background:url(../img/bg.png) no-repeat 0 0 fixed; background-size:cover;
+}
 a.block {
 position:absolute; left:0; top:0; width:100%; height:100%; display:block; background:;
 }
 p.intro-top {
 margin-bottom:20px;
 }
+
+.container {
+margin: 0 auto;max-width: 960px;
+}
+	.container#main-container {
+	background:rgba(255,255,255,0.67);
+	}
 
 .button {
 
@@ -44,3 +54,9 @@ cursor:pointer;
 .register-button {
 text-align:center; position:relative;
 }
+.list-group {
+
+}
+	.list-group-item {
+	background:rgba(255,255,255,0.65);
+	}
