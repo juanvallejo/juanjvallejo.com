@@ -1,5 +1,4 @@
 <?php
-session_start();
 	$customStyling = $_POST['customStyling'];
 	if(empty($customStyling)) {
 		$styling = "style='max-height:108px;overflow-y:hidden;'";

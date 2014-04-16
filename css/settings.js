@@ -65,12 +65,12 @@ $(document).ready(function() {
 			}
 		}
 	});
-	$('.post_delete').live('click',function() {
+	$('.post_delete').on('click',function() {
 		var id = $(this).attr('id');
 		var post = new Post();
 		post.delete(id);
 	});
-	$('#post_image').live("click",function() {
+	$('#post_image').on("click",function() {
 		document.getElementById("post_image_input").click();
 	});
 		$('#post_image_input').change(function() {
@@ -78,7 +78,7 @@ $(document).ready(function() {
 			v = v[v.length-1];
 			$('#post_image').children("span").html(v);
 		});
-	$('#terminal').live('keydown',function(e) {
+	$('#terminal').on('keydown',function(e) {
 		if(e.keyCode == 13) {
 			var v,t = document.getElementById("terminal");
 			if(t.value.match(/^\//gi)) {

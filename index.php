@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('css/lib/config.php');
 ?>
 <!DOCTYPE html>
@@ -23,10 +24,13 @@ include('css/lib/config.php');
 <div id="login"></div><!--#login-->
 <div id="wrapper">
 	<div id="header">
-		<div id="name"><a href="http://juanjvallejo.com/#!/home">Juan Vallejo</a></div><!--#name-->
-		<div id="nav">
-			<ul>
-			<?php
+	<?php
+		$host = $_SERVER['HTTP_HOST'];
+		
+		echo '<div id="name"><a href="'.(explode(":",$host)[0] == "localhost" ? "/" : "http://juanjvallejo.com/#!/home").'">Juan Vallejo</a></div><!--#name-->';
+		echo '<div id="nav">';
+		echo	'<ul>';
+
 			$sql = mysql_query("SELECT * FROM pages");
 			while($get = mysql_fetch_assoc($sql)) {
 				$location = '#!/page/'.$get['id'].'/'.$get['kind'].'/'.$get['page'];

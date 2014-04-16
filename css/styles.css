@@ -4,6 +4,9 @@ width:100%; height:100%; font:normal 16px 'carto',sans-serif; color:#505050;
 body {
 background:rgba(201,205,204,0.68)/*url(i/whitey.png)*/;
 }
+p.center {
+text-align:center;
+}
 
 #container {
 width:750px; height:180px; margin:0 auto 20px auto; padding:8px;
@@ -50,6 +53,9 @@ padding:25px 0 0 0; overflow-x:hidden;
 	}
 #post_title {
 font-size:3em;
+}
+#searchBox {
+margin:0 auto; display:block;
 }
 #terminal {
 width:100%; height:96%; padding:2% 0 2% 0; text-align:center; color:#f0f0f0;
@@ -114,7 +120,7 @@ display:none;
 }
 .input {
 padding:5px; width:185px; font:inherit; color:inherit; border:1px solid #777;
-background:rgba(255,255,255,0.8); border-radius:3px;
+background:transparent; border-radius:3px;
 }
 .item {
 width:218px; height:264px; float:left; margin:20px 15px 10px;
@@ -194,7 +200,7 @@ width:100%; text-align:center;
 }
 .textarea {
 padding:5px; font:inherit; color:inherit; border:1px solid #777;
-background:rgba(255,255,255,0.8); border-radius:3px;
+background:transparent; border-radius:3px;
 }
 
 /*font style classes*/
