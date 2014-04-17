@@ -16,16 +16,22 @@ margin: 0 auto;max-width: 960px;
 	}
 
 .button {
-
+cursor:pointer; color:white;
 }
 	.button-active {
-	background:#428bca; border-color:#357ebd; cursor:pointer; color:white;
+	background:#428bca; border-color:#357ebd;
 	}
 		.button-active:hover {
 		background:#357ebd;
 		}
 		.button-active:active {
 		box-shadow:inset 0 2px 1px rgba(0,0,0,0.1);
+		}
+	.button-active2 {
+	background:#5cb85c; border-color:#4cae4c;
+	}
+		.button-active2:hover {
+		background:rgba(68,156,68,0.9);
 		}
 .jumbotron:first-child {
 background:url(../img/stem_logo.png) no-repeat center center; background-size:74%; min-height:311px; position:relative; z-index:99;

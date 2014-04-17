@@ -24,7 +24,7 @@ function server(req,res) {
 
 		fs.readFile(__dirname+'/'+path,function(err,data) {
 			if(err) {
-				res.writeHead(500);
+				res.writeHead(404);
 				return res.end("The file '"+path+"' could not be found.");
 			}
 			res.writeHead(200,{'Content-type':(Type[ext] || Type["text"])});

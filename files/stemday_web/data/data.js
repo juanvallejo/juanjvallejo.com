@@ -3,7 +3,16 @@ window.onload = function() {
 	var slider = {
 		control:document.getElementsByClassName('carousel-control'),
 		self:document.getElementById('carousel-slides'),
+		transition:{
+			delay:8000,
+			on:true,
+			speed:'slow',
+			type:'default',
+			busy:false
+		},
+		errors:[],
 		slides:[],
+		processed:0,
 		size:8,
 		slide:{
 			current:0,
@@ -15,54 +24,70 @@ window.onload = function() {
 
 				if(amount > 0 || amount === null) {
 					var slide = document.createElement('div');
-					slide.className = 'item'+(!slider.slides.length ? ' active':'');
 					slide.style.cssFloat = 'left';
 					slide.add = function(error) {
+						this.className = 'item'+(this.id == slider.slide.current ? ' active' : '');
+
 						var container = document.createElement('div');
 						container.className = 'container';
 
 						var caption = document.createElement('div');
 						caption.className = 'carousel-caption';
-						slider.slides.push(this);
-						if(!error && amount && amount-1 > 0) slider.slide.add(amount-1,callback);
+
+						if(!error) slider.slides.push(this);
+						else {
+							slider.errors.push(error);
+						}
+
+						if(amount && amount-1 > 0) slider.slide.add(amount-1,callback);
 						else callback.call(this,error,slider.slides);
 					};
 
 					var img = new Image();
-					img.src = 'img/thumbs/'+(slider.slides.length+1)+'.jpg';
+					img.src = 'img/thumbs/'+(++slider.processed)+'.jpg';
 					img.addEventListener('load',function() {
 						this.className = 'img-responsive';
+						slide.id = slider.slides.length;
 						slide.appendChild(this);
 						slide.add();
 					});
 					img.addEventListener('error',function(e) {
-						console.log('Error adding image.');
-						console.log(e);
 						slide.add('There was an error adding this image to the slider array.');
 					});
 				}
 			},
 			next:function() {
-				var current = slider.self.children[slider.slide.current];
-				current.style.display = "none";
+				if(!slider.transition.busy) {
+					slider.transition.busy = true;
+					var current = slider.self.children[slider.slide.current];
+					$(current).fadeOut(slider.transition.speed,function() {
+						if(slider.slide.current >= slider.slides.length-1) {
+							slider.slide.current = -1;
+						}
 
-				if(slider.slide.current == slider.size-1) {
-					slider.slide.current = -1;
+						var next = slider.self.children[++slider.slide.current];
+						$(next).fadeIn(slider.transition.speed,function() {
+							slider.transition.busy = false;
+						});
+
+					});
 				}
-
-				var next = slider.self.children[++slider.slide.current];
-				next.style.display = "block";
 			},
 			previous:function() {
-				var current = slider.self.children[slider.slide.current];
-				current.style.display = "none";
+				if(!slider.transition.busy) {
+					slider.transition.busy = true;
+					var current = slider.self.children[slider.slide.current];
+					$(current).fadeOut(slider.transition.speed,function() {
+						if(slider.slide.current <= 0) {
+							slider.slide.current = slider.slides.length;
+						}
 
-				if(slider.slide.current == 0) {
-					slider.slide.current = slider.size;
+						var next = slider.self.children[--slider.slide.current];
+						$(next).fadeIn(slider.transition.speed,function() {
+							slider.transition.busy = false;
+						});
+					});
 				}
-
-				var next = slider.self.children[--slider.slide.current];
-				next.style.display = "block";
 			},
 			remove:function(index) {
 
@@ -71,6 +96,8 @@ window.onload = function() {
 		init:function() {
 			var self = this;
 
+			self.slide.current = parseInt(Math.random()*(self.size));
+
 			self.slide.add(self.size,function(err,slides) {
 				slides.forEach(function(slide) {
 					slider.self.appendChild(slide);
@@ -78,11 +105,22 @@ window.onload = function() {
 			});
 
 			slider.control[0].addEventListener('click',function() {
+				if(slider.transition.on) slider.transition.on = false;
 				slider.slide.previous();
 			});
 			slider.control[1].addEventListener('click',function() {
+				if(slider.transition.on) slider.transition.on = false;
 				slider.slide.next();
 			});
+
+			(function ticker() {
+				if(slider.transition.on) {
+					var interval = setTimeout(function() {
+						slider.slide.next();
+						ticker();
+					},slider.transition.delay);
+				}
+			})();
 		}
 	};
 
