@@ -1,3 +1,7 @@
+/**
+ * juanvallejo
+ * @version 1.0
+ */
 window.onload = function() {
 	//slider logic
 	var slider = {
@@ -96,6 +100,8 @@ window.onload = function() {
 		init:function() {
 			var self = this;
 
+			if(!self.self) return console.log("Slider wrapper not implemented.");
+
 			self.slide.current = parseInt(Math.random()*(self.size));
 
 			self.slide.add(self.size,function(err,slides) {
@@ -124,9 +130,9 @@ window.onload = function() {
 		}
 	};
 
-	//make page slide to local href instead of jumping
+	//make page slide to local link (hashtag) instead of jumping
 	var a = document.getElementsByTagName('a');
-	var triggs = ['#register','#pictures'];
+	var triggs = ['#register'];
 
 	for(var i=0;i<a.length;i++) {
 		a[i].addEventListener('click',function(e) {

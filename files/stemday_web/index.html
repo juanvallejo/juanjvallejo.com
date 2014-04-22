@@ -25,7 +25,6 @@
     <a class="navbar-brand">STEM</a>
     <ul class="nav navbar-nav">
         <li class="active"><a>Home</a></li>
-        <li><a href="#pictures">Pictures</a></li>
         <li><a href="mailto:stemday@cnu.edu">Contact</a></li>
         <li class="divider-vertical"></li>
     </ul>
@@ -40,24 +39,61 @@
         <div class="pic pic-left"></div>
         <div class="pic pic-right"></div>
     </div>
-  
-    <div class="carousel-inner" style="margin-top:25px;clear:left;float:left;">
+    
+    <!--slider-->
+    <div class="col-lg-12" id="pictures" style="margin-top:15px;">
+        <div id="photoroll" class="carousel slide">
+            <!--caption-->
+            <div class="carousel-caption" id="static-caption">
+                <h1>Saturday May 31, 2014</h1>
+                  <p style="font-size:1.3em;">In the Freeman Center at Christopher Newport University</p>
+                  <p style="font-size:1.5em;position:relative;top:-10px;">From 10am to 3pm</p>
+                  <p><a class="btn btn-lg btn-primary" href="data/flyer.pdf">Learn More</a>
+                </p></pthis>
+            </div><!--.carousel-caption-->
+            <!--/caption-->
+            <!-- Indicators -->
+            <ol class="carousel-indicators" id="carousel-indicators"></ol>
+            <div class="carousel-inner" id="carousel-slides">
+               <!--  <div class="item active">
+                    <img src="img/thumbs/0.jpg" class="img-responsive">
+                    <div class="container">
+                    <div class="carousel-caption">
+                        <h1>STEM Community Day</h1>
+                        <p>Solve today's problems. unTangle the world's mysteries. Find an Exciting career. Make a Meaningful contribution</p>
+                        <p><a class="btn btn-lg btn-primary" href="data/flyer.pdf">Learn More</a>
+                        </p></pthis></div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control">
+            <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control">
+            <span class="icon-next"></span>
+            </a>  
+        </div>
+        <hr />
+    </div>
+    <!--/slider-->
+
+    <!-- <div class="carousel-inner" style="margin-top:25px;clear:left;float:left;">
             <div class="item active">
               <img src="img/thumbs/0.jpg" class="img-responsive">
               <div class="container">
                 <div class="carousel-caption">
-                  <!-- <h1>STEM Community Day</h1>
-                  <p>Solve today's problems. untangle the world's mysteries. Find an Exciting career. Make a Meaningful contribution</p> -->
                   <h1>Saturday May 31, 2014</h1>
                   <p style="font-size:1.3em;">In the Freeman Center at Christopher Newport University</p>
                   <p style="font-size:1.5em;position:relative;top:-10px;">From 10am to 3pm</p>
-                  <!-- <p>Solve today's problems. untangle the world's mysteries. Find an Exciting career. Make a Meaningful contribution</p> -->
                   <p><a class="btn btn-lg btn-primary" href="data/flyer.pdf">Learn More</a>
                 </p></pthis></div>
               </div>
             </div>
             <hr />
-    </div>
+    </div> -->
+    
 
     <div class="row">
         <div class="col-lg-6">
@@ -100,55 +136,27 @@
             <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Student displays and competitions including robotics</li>
             <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Electric cars and aviation projects</li>
             <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Explore STEM educational opportunities and professions</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Free admitance for participants and exhibitors</li>
         </div><!--.list-group-->
     </div>
     <div class="col-lg-6">
         <div class="list-group">
             <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Exhibitors from local STEM organizations, businesses, colleges, universities, and community groups</li>
             <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Free health, wellness, and fitness screenings</li>
-            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Live performances by professional theater company</li>
+            <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Live performances by Story Pirates Children's Theater Company</li>
             <li class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> Food and beverages (for purchase)</li>
         </div><!--.list-group-->
     </div>
 
-<!--slider-->
-    <div class="col-lg-12" id="pictures">
-        <hr />
-        <div id="photoroll" class="carousel slide">
-            <!-- Indicators -->
-            <ol class="carousel-indicators" id="carousel-indicators"></ol>
-            <div class="carousel-inner" id="carousel-slides">
-               <!--  <div class="item active">
-                    <img src="img/thumbs/0.jpg" class="img-responsive">
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <h1>STEM Community Day</h1>
-                        <p>Solve today's problems. unTangle the world's mysteries. Find an Exciting career. Make a Meaningful contribution</p>
-                        <p><a class="btn btn-lg btn-primary" href="data/flyer.pdf">Learn More</a>
-                        </p></pthis></div>
-                    </div>
-                </div> -->
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control">
-            <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control">
-            <span class="icon-next"></span>
-            </a>  
-        </div>
-        <hr />
-    </div>
-<!--/slider-->
-
-    <div class="col-lg-6" id="register">
+    <div class="col-lg-6" id="register" style="clear:left;">
+    <hr />
         <div class="button register-button button-active well well-lg">
             <a href="https://regstg.com/Registration/RegForm.aspx?rid=c476bd6a-8909-4771-a95a-84b6ad3ae039" class="block" target="_blank"></a>
             Exhibitor Registration
         </div>
     </div>
     <div class="col-lg-6">
+    <hr />
         <div class="button register-button button-active2 well well-lg">
             <a href="http://register.eventmobi.com/stemcommunityday#/" class="block" target="_blamk"></a>
             Participant Registration

@@ -54,8 +54,17 @@ background:url(../img/stem_logo.png) no-repeat center center; background-size:74
 	-webkit-transform:rotate(6deg);
 	-moz-transform:rotate(6deg);
 	}
+.carousel {
+max-height:600px; overflow-y:hidden;
+}
+	.carousel #photoroll {
+	position:relative; height:600px; overflow-y:hidden; background:green;
+	}
+		.carousel-caption#static-caption {
+		position:absolute; width:100%; height:200px; bottom:70px; left:0; z-index:1;
+		}
 .carousel-control {
-cursor:pointer;
+cursor:pointer; z-index:2;
 }
 .register-button {
 text-align:center; position:relative;
