@@ -27,7 +27,7 @@ include('css/lib/config.php');
 	<?php
 		$host = explode(":",$_SERVER['HTTP_HOST']);
 		
-		echo '<div id="name"><a href="'.($host[0] == "localhost" ? "/" : "http://juanjvallejo.com/#!/home").'">Juan Vallejo</a></div><!--#name-->';
+		echo '<div id="name"><a href="'.($host[0] == "localhost" ? "/" : "http://juanv.us/#!/home").'">Juan Vallejo</a></div><!--#name-->';
 		echo '<div id="nav">';
 		echo	'<ul>';
 
